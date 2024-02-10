@@ -3,6 +3,7 @@ import { PropertyCardComponent } from '../property-card/property-card.component'
 import { NgFor } from '@angular/common';
 import { HousingService } from '../../services/housing.service';
 import { HttpClientModule } from '@angular/common/http';
+import { IProperty } from '../IProperty.interface';
 
 @Component({
   selector: 'app-property-list',
@@ -17,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [HousingService]
 })
 export class PropertyListComponent implements OnInit {
-  properties: any;
+  properties: Array<IProperty> = [];
 
   constructor(private housingService: HousingService) { };
 
