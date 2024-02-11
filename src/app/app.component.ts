@@ -9,7 +9,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
   imports: [
     RouterOutlet,
     PropertyListComponent,
-    NavBarComponent,
+    NavBarComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
